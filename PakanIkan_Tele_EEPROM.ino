@@ -10,9 +10,9 @@
 #include <RTClib.h>
 
 // ---------------- WiFi & Telegram ----------------
-const char* ssid = "Picasso";
-const char* password = "22222222";
-const char* botToken = "6635161265:AAHRFolKRZPURqUJcBD-5axpY1yEG6HF0II";
+const char* ssid = "YOUR SSID";
+const char* password = "YOUR PASS";
+const char* botToken = "YOUR TELE BOT TOKEN";
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(botToken, client);
@@ -43,7 +43,6 @@ const String adminChatId = "5627733104"; // <-- replace with your admin chat_id
 // --- Allowed users (initial) ---
 String allowedUsersDefault[] = {
   "5627733104",   // admin (example)
-  "6886222138"
 };
 #define MAX_ALLOWED_USERS 5
 String allowedUsers[MAX_ALLOWED_USERS];
